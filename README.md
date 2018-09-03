@@ -14,3 +14,25 @@ Learning the main commands and techniques of Linux and how to write bash scripts
 - Enter a shell session with `bash`, and exit with `ctrl + d`.
 - Huh, you can use `alt` plus buttons to make funky symbols.
 - Use `history` to see your history; can be useful to pipe it into `less`.
+
+## Next steps:
+- `grep`, `aux`, `sed`, `awk`, the intricacies of `cat` and `sort`.
+- Learn the flags: they are specific to each command, so use `man` liberally.
+
+## Scripts with npm:
+- Use `pre` and `post` tags to run a script before/after another process is run.
+- `-D` is shorthand for `--save-dev`
+- `&&` chains commands, only running each command if its predecessor succeeded.
+- Example command with output tag: `node-sass --output-style compressed -o dist/css src/scss`
+- Example script with only-if-not-exist tag: `"imagemin": "imagemin src/images dist/images -p"`
+- Problem with npm scripting is that they are not platform independent; this is a large part of Grunt/Gulp/Brunch's value.
+
+## Shout outs:
+I learned a lot from the following materials:
+- Blogs:
+  - https://css-tricks.com/why-npm-scripts/
+  - https://medium.freecodecamp.org/introduction-to-npm-scripts-1dbb2ae01633
+
+- Youtube:
+  - https://www.youtube.com/watch?v=oxuRxtrO2Ag
+  - https://www.youtube.com/watch?v=pEN4WnFNMx0

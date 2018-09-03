@@ -32,7 +32,8 @@ echo This script is called $0, and it has been given $# command line args. They 
 # In addition to CLAs, we can read input from the user, or accept data from STDIN.
 
 
-# Not sure why this wouldn't work in other order...Maybe we can't use "<" ? Ahhh yes, you use -gt!!!
+# Not sure why this wouldn't work in other order...Maybe we can't use "<" ?
+# Ahhh yes, you use -gt!!!
 if [ $# = 0 ]
 then
   echo No file specified.

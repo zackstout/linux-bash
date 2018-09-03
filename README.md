@@ -1,8 +1,14 @@
 # Linux and Bash Scripts
 Learning the main commands and techniques of Linux and how to write bash scripts.
 
-## Notes:
+There are two main goals here. Learning all the built-in functionality, such as `wc` for counting lines, saves me time: I don't have to reinvent the wheel to get that functionality in the future. But learning the basic pieces will alter the way that I conceptualize future problems, and allow me to imagine more appropriate solutions (if you only have a hammer, everything's a nail, etc.).
+
+## Aliasing:
 - To create an alias, use `vim ~/.bashrc` then append e.g. `alias gpom='git push origin master'`. (And then `:wq` to save, and `source ~/.bashrc` or restart the terminal.)
+
+## Bash:
+- Remember that you need to run `chmod 755 [file]` to add execution permission.
+  - Also remember to preface calls to `.sh` files with `./`.
 - To get information about...:
   - `uname` to get info about current kernel,
   - `ifconfig` to get IP info,
@@ -11,9 +17,15 @@ Learning the main commands and techniques of Linux and how to write bash scripts
   - `netstat` for info about open ports/sockets,
   - `top` for computational/processing info.
 - Can use `ctrl + k` (kill to end), `ctrl + u` (kill up to), `ctrl + w` (kill word) and `ctrl + y` (yank, i.e. paste) to manipulate text in the terminal's shell.
+- Use `ctrl + a` and `ctrl + e` to go to beginning and end of line.
 - Enter a shell session with `bash`, and exit with `ctrl + d`.
 - Huh, you can use `alt` plus buttons to make funky symbols.
 - Use `history` to see your history; can be useful to pipe it into `less`.
+- `test` is quite useful, and controls what happens when you evaluate expressions e.g. in conditionals.
+  - `-n` checks for non zero length
+  - `-e` checks if file exists
+- Can use `$USER` and `$HOME` to access useful info inside scripts.
+- Use double parentheses or `expr` to evaluate arithmetic expressions.
 
 ## Next steps:
 - `grep`, `aux`, `sed`, `awk`, the intricacies of `cat` and `sort`.
@@ -32,6 +44,7 @@ I learned a lot from the following materials:
 - Blogs:
   - https://css-tricks.com/why-npm-scripts/
   - https://medium.freecodecamp.org/introduction-to-npm-scripts-1dbb2ae01633
+  - https://www.panix.com/~elflord/unix/bash-tute.html
 
 - Youtube:
   - https://www.youtube.com/watch?v=oxuRxtrO2Ag

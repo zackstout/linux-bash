@@ -5,8 +5,9 @@ There are two main goals here. Learning all the built-in functionality, such as 
 
 ## Aliasing:
 - To create an alias, use `vim ~/.bashrc` then append e.g. `alias gpom='git push origin master'`. (And then `:wq` to save, and `source ~/.bashrc` or restart the terminal.)
-- If you want to create an alias that takes in a command line argument, instead create a function in your `.bashrc` file, and call that instead. You don't need to `alias` anything.
+- If you want to create an alias that takes in a command line argument (for instance a command that takes in a commit message and pushes it up to Github), instead create a function in your `.bashrc` file, and call that instead. You don't need to `alias` anything.
   - Oh, but you have to be sure to handle the fact that spaces in the shell will be interpreted as separations between arguments...
+- Wait, we won't have to `source` in `~/.bashrc` every time, right...?
 
 ## Bash:
 - Remember that you need to run `chmod 755 [file]` to add execution permission.

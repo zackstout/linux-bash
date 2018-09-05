@@ -8,6 +8,7 @@ There are two main goals here. Learning all the built-in functionality, such as 
 - If you want to create an alias that takes in a command line argument (for instance a command that takes in a commit message and pushes it up to Github), instead create a function in your `.bashrc` file, and call that instead. You don't need to `alias` anything.
   - Oh, but you have to be sure to handle the fact that spaces in the shell will be interpreted as separations between arguments...
 - Wait, we won't have to `source` in `~/.bashrc` every time, right...?
+- Ooooh I think we may want to save our changes to `~/.bash_profile` rather than `~/.bashrc`. That should fix it.
 
 ## Bash:
 - Remember that you need to run `chmod 755 [file]` to add execution permission.
@@ -34,7 +35,7 @@ There are two main goals here. Learning all the built-in functionality, such as 
 - `grep`, `aux`, `sed`, `awk`, the intricacies of `cat` and `sort`.
 - Learn the flags: they are specific to each command, so use `man` liberally.
 
-## Scripts with npm:
+## Scripting with npm:
 - Use `pre` and `post` tags to run a script before/after another process is run.
 - `-D` is shorthand for `--save-dev`
 - `&&` chains commands, only running each command if its predecessor succeeded.
@@ -48,7 +49,10 @@ I learned a lot from the following materials:
   - https://css-tricks.com/why-npm-scripts/
   - https://medium.freecodecamp.org/introduction-to-npm-scripts-1dbb2ae01633
   - https://www.panix.com/~elflord/unix/bash-tute.html
+  - http://programmingexamples.wikidot.com/bash-scripting
 
 - Youtube:
   - https://www.youtube.com/watch?v=oxuRxtrO2Ag
   - https://www.youtube.com/watch?v=pEN4WnFNMx0
+
+- [Bash Snippets](https://github.com/alexanderepstein/Bash-Snippets), from which I downloaded `cheat` and `weather`.

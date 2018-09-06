@@ -1,6 +1,7 @@
 
 #!/bin/bash
-# Taken from the tutorial: 
+# Taken from the tutorial:
+# I guess it's using a default split character (`-F`)?
 space_free=$( df -h | awk '{ print $5 }' | sort -n | tail -n 1 | sed 's/%//' )
 
 case $space_free in

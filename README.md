@@ -11,7 +11,7 @@ There are two main goals here. Learning all the built-in functionality, such as 
 - Ooooh I think we may want to save our changes to `~/.bash_profile` rather than `~/.bashrc`. That should fix it.
 
 ## Bash:
-- Remember that you need to run `chmod 755 [file]` to add execution permission.
+- Remember that you (usually? sometimes?) need to run `chmod 755 [file]` to add execution permission.
   - Also remember to preface calls to `.sh` files with `./`.
 - To get information about...:
   - `uname` to get info about current kernel,
@@ -33,7 +33,10 @@ There are two main goals here. Learning all the built-in functionality, such as 
 
 ## Next steps:
 - `grep`, `aux`, `sed`, `awk`, the intricacies of `cat` and `sort`.
+  - Can use our Shakespeare text to play around with these commands.
 - Learn the flags: they are specific to each command, so use `man` liberally.
+- Write a script that finds all git repos that have new stuff to commit, and push them all to master.
+- Write a script that tells you when it makes sense to quit a game (when your low odds outvalue possible time..?).
 
 ## Scripting with npm:
 - Use `pre` and `post` tags to run a script before/after another process is run.
@@ -41,7 +44,7 @@ There are two main goals here. Learning all the built-in functionality, such as 
 - `&&` chains commands, only running each command if its predecessor succeeded.
 - Example command with output tag: `node-sass --output-style compressed -o dist/css src/scss`
 - Example script with only-if-not-exist tag: `"imagemin": "imagemin src/images dist/images -p"`
-- Problem with npm scripting is that they are not platform independent; this is a large part of Grunt/Gulp/Brunch's value.
+- Problem with npm scripts is that they are not platform-independent; this is a large part of Grunt/Gulp/Brunch's appeal.
 
 ## Shout outs:
 I learned a lot from the following materials:

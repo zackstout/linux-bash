@@ -59,3 +59,33 @@ I learned a lot from the following materials:
   - https://www.youtube.com/watch?v=pEN4WnFNMx0
 
 - [Bash Snippets](https://github.com/alexanderepstein/Bash-Snippets), from which I downloaded `cheat` and `weather`.
+
+
+================================================================================
+
+## More Bash Notes:
+
+- `cat -n [file]` to see line numbers
+- `less [file]` changes UI in terminal. Shift G to end, g to top. Type `/[word]` to search; use `q` to exit.
+- can specify how to open file with `open [file] [editor]`, e.g. TextEdit
+- use `>` to overwrite a file, and `>>` to append to it.
+- use `find` to ...find things. e.g. `find . -type d`, or `find [dir] -name "*.png"`.
+  - can also run something on each match, with the `-exec` flag.
+  - Kinda strange syntax with {} \;
+  - Remember you can use `man`, e.g. `man find`
+- GREP tips:
+  - Can pass `-n` and `--color`, e.g. `grep --color [text] [source]`
+  - Can also pass `-C [number]` for surrounding context.
+  - pass the `-e` flag to use regex, e.g. `grep -e "npm.config.[gs]et" [source]` to look for both 'get' and 'set'.
+- CURL tips:
+  - Use `-i` to see headers; use `-iL` to see headers AND follow redirects.
+  - Use `-H` to add header.
+  - use `-X POST` to change request type.
+  - Can pair with `-o` to output response to a file.
+  - Can | output into `jsome`, a global node module, for pretty output.
+
+- Can use write `\` and enter to write on multiple lines!!!
+
+- Remember we need to prepend `./` to execute a bash script (and remember to `chmod u+x script.sh`)
+- Remember to use `$(pwd)` parentheses syntax to execute a command and store output in a variable.
+- NICE: Instead of using `.bash_profile`, we can run `cp [script] /usr/local/bin/[script_name]`.
